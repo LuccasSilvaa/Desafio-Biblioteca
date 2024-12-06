@@ -1,0 +1,58 @@
+.containerBanner {
+  background-image: url("../../assets/home/banner.png");
+  height: 48vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  h2 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    color: white;
+  }
+}
+
+.containerDoar {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150vh;
+  border: solid #005695 2px;
+  h2 {
+    font-size: 6vw;
+    color: #005695;
+  }
+}
+
+.boxCard {
+  border: solid red 2px;
+  display: flex;
+  flex-direction: column;
+  height: 140vh;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  article {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 30vh;
+    background-color: #0157944d;
+    border-radius: 10px;
+    p {
+      font-size: 22px;
+      font-family: "Inter", sans-serif;
+    }
+  }
+}
