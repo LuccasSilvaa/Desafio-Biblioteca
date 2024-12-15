@@ -1,18 +1,30 @@
+@media (min-width: 1025px) {
+}
+
 .containerBanner {
   background-image: url("../../assets/home/banner.png");
   height: 48vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  @media (min-width: 1025px) {
+    background-image: url("../../assets/home/bannerResponsive.png");
+    height: 88vh;
+    background-size: contain;
+    justify-content: start;
+  }
   h2 {
+
     font-family: "Roboto", sans-serif;
-    display: flex;
-    justify-content: center;
     width: 280px;
     color: white;
+    @media (min-width: 1025px) {
+      font-size: 2vw;
+      width: 20vw;
+      margin-left: 10vw;
+    }
   }
 }
 
@@ -20,39 +32,65 @@
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  height: 150vh;
-  border: solid #005695 2px;
+  height: 230vh;
+  @media (min-width: 1025px) {
+    height: 100vh;
+  }
+
   h2 {
-    font-size: 6vw;
+    font-size: 10vw;
+    margin-bottom: 4vh;
+    margin-top: 8vh;
     color: #005695;
+    @media (min-width: 1025px) {
+      font-size: 3vw;
+      width: 87vw;
+    }
   }
 }
 
 .boxCard {
-  border: solid red 2px;
   display: flex;
   flex-direction: column;
-  height: 140vh;
+  height: 175vh;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  @media (min-width: 1025px) {
+    width: 100%;
+    flex-direction: row;
+  }
   article {
-    width: 60vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
     text-align: center;
-    height: 30vh;
+    height: 40vh;
     background-color: #0157944d;
     border-radius: 10px;
+    @media (min-width: 1025px) {
+      width: 15vw;
+    }
+
+    img {
+      width: 20vw;
+
+      @media (min-width: 1025px) {
+        width: 5vw;
+      }
+    }
     p {
-      font-size: 22px;
+      font-size: 5vw;
+      width: 70vw;
       font-family: "Inter", sans-serif;
+      @media (min-width: 1025px) {
+        width: 10vw;
+        font-size: 1.04vw;
+      }
     }
   }
 }
