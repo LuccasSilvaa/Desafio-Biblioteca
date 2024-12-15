@@ -1,0 +1,44 @@
+@media (min-width: 1025px) {
+}
+
+.containerDoados {
+  
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 230vh;
+  align-items: center;
+  @media (min-width: 1025px) {
+    height: 70vh;
+  }
+}
+
+.containerCard {
+  width: 120vw;
+  height: 200vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1025px) {
+    width: 85vw;
+    height: 60vh;
+    flex-direction: row;
+  }
+
+  article {
+    border: solid 2px #005695;
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    @media (min-width: 1025px) {
+      width: 15vw;
+      height: 30vh;
+    }
+  }
+}
