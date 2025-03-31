@@ -2,7 +2,6 @@
 }
 
 .containerDoados {
-  
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
@@ -18,9 +17,10 @@
   width: 120vw;
   height: 200vh;
   display: flex;
-  justify-content: space-evenly;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: 1025px) {
     width: 85vw;
     height: 60vh;
@@ -29,16 +29,54 @@
 
   article {
     border: solid 2px #005695;
-    width: 80vw;
-    height: 60vh;
+    width: 60vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 15px;
+    font-size: 3vw;
+
+    img {
+      width: 20vw;
+    }
     @media (min-width: 1025px) {
       width: 15vw;
-      height: 30vh;
+      height: 40vh;
+      img {
+        width: 8vw;
+      }
     }
+  }
+}
+
+article h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5vw;
+  
+  @media (min-width: 1025px) {
+    text-align: center;
+    width: 100%;
+    font-size: 0.7vw;
+  }
+}
+article img {
+  display: block;
+  margin: 0 auto;
+}
+
+article p {
+  font-size: 2.5vw;
+  margin-left: 2vw;
+  @media (min-width: 1025px) {
+    margin-left: 1vw;
+    font-size: 0.7vw;
+  }
+}
+article p:nth-of-type(2) {
+  margin-top: -9vw; 
+  @media (min-width: 1025px) {
+    margin-top: -1.5vw; 
   }
 }
