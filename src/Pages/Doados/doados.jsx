@@ -5,14 +5,14 @@ import axios from "axios";
 
 export default function doados() {
   const [dados, setDados] = React.useState([]);
-  const pegarDados = async () => {
-    const Dados = await axios.get(
+  const getLivros = async () => {
+    const response = await axios.get(
       "https://api-livros-vnw-3gyx.onrender.com/livros"
     );
-    setDados(Dados.data);
+    setDados(response.data);
   };
   React.useEffect(() => {
-    pegarDados();
+    getLivros();
   }, [setDados]);
 
   return (
