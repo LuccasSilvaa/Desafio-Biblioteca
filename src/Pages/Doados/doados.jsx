@@ -6,10 +6,15 @@ import axios from "axios";
 export default function doados() {
   const [dados, setDados] = React.useState([]);
   const getLivros = async () => {
+   try {
     const response = await axios.get(
       "https://api-livros-vnw-3gyx.onrender.com/livros"
     );
     setDados(response.data);
+   } catch (error) {
+    console.error("Erro ao buscar livros:", error)
+   }
+
   };
   React.useEffect(() => {
     getLivros();
@@ -21,7 +26,7 @@ export default function doados() {
 
       <section className={S.containerCard}>
         {dados.map((index) => (
-          <article>
+          <article key={index.id}>
             <img src={index.imagem_url} alt="" />
             <h2>{index.titulo}</h2>
             <p>Autor: {index.autor}</p>

@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media (min-width: 700px) {
 
 }
 
@@ -18,7 +18,7 @@ footer{
   padding-right: 50px;
   color: white;
   flex-direction: column;
-  @media (min-width: 1025px) {
+  @media (min-width: 700px) {
     justify-content: space-between;
     flex-direction:row;
   }
@@ -28,14 +28,14 @@ footer{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     @media (min-width: 1025px) {
+     @media (min-width: 700px) {
 
       width: 20vw;
     }
      
      img{
       width: 8vw;
-      @media (min-width: 1025px) {
+      @media (min-width: 700px) {
 
         width: 2vw;
         

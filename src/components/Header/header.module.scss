@@ -12,7 +12,7 @@ header {
     rgba(0, 27, 47, 1) 0%,
     rgba(0, 86, 149, 1) 88%
   );
-  @media(min-width: 1024px){
+  @media(min-width: 700px){
     flex-direction: row;
   }
   
@@ -27,23 +27,20 @@ header {
   align-items: center;
   color: white;
   font-size: 4vw;
-  @media(min-width: 1024px){
+  @media(min-width: 700px){
     width: 20vw;
-    font-size: 1.30vw;
+    font-size: 1vw;
     margin-top:0vw;
   }
-  @media(min-width: 938px) and (max-width: 1008px){
-    font-size: 3vw;
-    width: 50vw;
-    
-  }
+
+  
   img{
     width: 11vw;
     @media(min-width: 938px) and (max-width: 1008px){
       width: 8vw;
     }
-    @media(min-width: 1024px){
-      width: 3.02vw;
+    @media(min-width: 700px){
+      width: 2vw;
     }
   }
 }
@@ -59,7 +56,7 @@ header {
     @media(min-width: 938px) and (max-width: 1008px){
       font-size: 3vw;
     }
-    @media(min-width: 1024px){
+    @media(min-width: 700px){
       width: 40vw;
       font-size: 1.04vw;
     }
@@ -72,7 +69,7 @@ header {
 
 .boxSearch{
   display: none;
-  @media(min-width: 1024px){
+  @media(min-width: 700px){
     display: flex;
   }
 }

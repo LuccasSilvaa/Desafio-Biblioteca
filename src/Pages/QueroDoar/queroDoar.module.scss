@@ -12,7 +12,7 @@
     width: 70vw;
     font-size: 4vw;
 
-    @media (min-width: 1025px) {
+    @media (min-width: 700px) {
       width: 100%;
       font-size: 2vw;
     }
@@ -28,7 +28,7 @@ form {
   justify-content: space-around;
   height: 60vh;
   border-radius: 20px;
-  @media (min-width: 1025px) {
+  @media (min-width: 700px) {
     width: 30vw;
     height: 80vh;
   }
@@ -40,12 +40,12 @@ form {
     align-items: center;
     color: #005695;
     font-size: 4vw;
-    @media (min-width: 1025px) {
+    @media (min-width: 700px) {
       font-size: 1vw;
     }
     img {
       width: 8vw;
-      @media (min-width: 1025px) {
+      @media (min-width: 700px) {
         width: 3vw;
       }
     }
@@ -58,7 +58,7 @@ form {
     border-radius: 10px;
     outline: none;
     padding-left: 20px;
-    @media (min-width: 1025px) {
+    @media (min-width: 700px) {
       width: 20vw;
     }
     &::placeholder {
@@ -74,7 +74,7 @@ input:nth-child(6) {
   padding-left: 0;
   color: white;
   font-size: 17px;
-  @media (min-width: 1025px) {
+  @media (min-width: 700px) {
     width: 15vw;
   }
 }
